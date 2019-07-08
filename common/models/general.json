@@ -1,0 +1,23 @@
+{
+  "name": "General",
+  "base": "Model",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "complexion": {
+      "type": "object"
+    },
+    "skinColor": {
+      "type": "object"
+    },
+    "gender": {
+      "type": "object"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

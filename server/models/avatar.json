@@ -1,52 +1,67 @@
 {
-  "name": "avatar",
+  "name": "Avatar",
   "base": "PersistedModel",
-  "idInjection": true,
+  "idInjection": false,
   "options": {
     "validateUpsert": true
   },
   "properties": {
     "name": {
       "type": "string",
-      "required": true
+      "required": true,
+      "default": "John"
     },
-    "eyes": {
-      "type": "string",
-      "default": "blue"
-    },
-    "hairColor": {
-      "type": "string",
-      "default": "brown"
-    },
-    "hairType": {
-      "type": "string",
-      "default": "curly"
-    },
-    "hairAccesory": {
-      "type": "string",
-      "default": "white hat"
-    },
-    "complexion": {
-      "type": "string",
-      "default": "fat"
-    },
-    "skin": {
-      "type": "string",
-      "default": "light"
-    },
-    "gender": {
-      "type": "string",
-      "default": "male"
-    },
-    "bodyAccesory": {
-      "type": "string"
-    },
-    "legAccesory": {
-      "type": "string"
+    "face": {
+      "type": "Face"
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "faces": {
+      "type": "hasOne",
+      "model": "Face",
+      "foreignKey": ""
+    },
+    "hairs": {
+      "type": "hasOne",
+      "model": "Hair",
+      "foreignKey": ""
+    },
+    "bodies": {
+      "type": "hasOne",
+      "model": "Body",
+      "foreignKey": ""
+    },
+    "bottoms": {
+      "type": "hasOne",
+      "model": "Bottom",
+      "foreignKey": ""
+    },
+    "generals": {
+      "type": "hasOne",
+      "model": "General",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
-  "methods": {}
+  "methods": {
+    "render": {
+      "accepts": [
+        {
+          "arg": "avatar",
+          "type": "Avatar",
+          "required": true,
+          "http": {
+            "source": "body"
+          },
+          "description": "Make your avatar!"
+        }
+      ],
+      "returns": {
+        "arg": "data",
+        "type": "Avatar",
+        "root": true
+      }
+    }
+  }
 }

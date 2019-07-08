@@ -32,7 +32,7 @@
     "dataSource": "db",
     "public": false
   },
-  "avatar": {
+  "Avatar": {
     "dataSource": "db",
     "options": {
       "remoting": {
@@ -42,5 +42,29 @@
         }
       }
     }
+  },
+  "AvatarEntity": {
+    "dataSource": null,
+    "public": false
+  },
+  "Face": {
+    "dataSource": null,
+    "public": false
+  },
+  "Hair": {
+    "dataSource": null,
+    "public": false
+  },
+  "Body": {
+    "dataSource": null,
+    "public": false
+  },
+  "Bottom": {
+    "dataSource": null,
+    "public": false
+  },
+  "General": {
+    "dataSource": null,
+    "public": false
   }
 }

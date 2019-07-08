@@ -1,0 +1,23 @@
+{
+  "name": "Face",
+  "base": "Model",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "eyes": {
+      "type": "object"
+    },
+    "glasses": {
+      "type": "object"
+    },
+    "mouth": {
+      "type": "object"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

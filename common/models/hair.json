@@ -1,0 +1,23 @@
+{
+  "name": "Hair",
+  "base": "Model",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "color": {
+      "type": "object"
+    },
+    "type": {
+      "type": "object"
+    },
+    "accesory": {
+      "type": "object"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
