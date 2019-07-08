@@ -3,18 +3,19 @@
   "base": "Model",
   "idInjection": false,
   "options": {
-    "validateUpsert": true
+    "validateUpsert": false
   },
   "properties": {
-    "accesory": {
-      "type": "object"
+    "accessory": {
+      "type": "BodyPart"
     },
     "color": {
-      "type": "object"
+      "type": "BodyPart"
     }
   },
   "validations": [],
   "relations": {},
   "acls": [],
-  "methods": {}
+  "methods": {},
+  "excludeBaseProperties": ["id"]
 }

@@ -3,21 +3,22 @@
   "base": "Model",
   "idInjection": false,
   "options": {
-    "validateUpsert": true
+    "validateUpsert": false
   },
   "properties": {
     "complexion": {
-      "type": "object"
+      "type": "BodyPart"
     },
     "skinColor": {
-      "type": "object"
+      "type": "BodyPart"
     },
     "gender": {
-      "type": "object"
+      "type": "BodyPart"
     }
   },
   "validations": [],
   "relations": {},
   "acls": [],
-  "methods": {}
+  "methods": {},
+  "excludeBaseProperties": ["id"]
 }

@@ -1,9 +1,9 @@
 {
   "name": "AvatarEntity",
   "base": "Model",
-  "idInjection": true,
+  "idInjection": false,
   "options": {
-    "validateUpsert": true
+    "validateUpsert": false
   },
   "properties": {},
   "validations": [],

@@ -3,7 +3,7 @@
   "base": "PersistedModel",
   "idInjection": false,
   "options": {
-    "validateUpsert": true
+    "validateUpsert": false
   },
   "properties": {
     "name": {
@@ -13,36 +13,22 @@
     },
     "face": {
       "type": "Face"
+    },
+    "hair": {
+      "type": "Hair"
+    },
+    "body": {
+      "type": "Body"
+    },
+    "bottom": {
+      "type": "Bottom"
+    },
+    "general": {
+      "type": "General"
     }
   },
   "validations": [],
-  "relations": {
-    "faces": {
-      "type": "hasOne",
-      "model": "Face",
-      "foreignKey": ""
-    },
-    "hairs": {
-      "type": "hasOne",
-      "model": "Hair",
-      "foreignKey": ""
-    },
-    "bodies": {
-      "type": "hasOne",
-      "model": "Body",
-      "foreignKey": ""
-    },
-    "bottoms": {
-      "type": "hasOne",
-      "model": "Bottom",
-      "foreignKey": ""
-    },
-    "generals": {
-      "type": "hasOne",
-      "model": "General",
-      "foreignKey": ""
-    }
-  },
+  "relations": [],
   "acls": [],
   "methods": {
     "render": {
@@ -63,5 +49,6 @@
         "root": true
       }
     }
-  }
+  },
+  "excludeBaseProperties": ["id"]
 }

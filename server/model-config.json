@@ -66,5 +66,9 @@
   "General": {
     "dataSource": null,
     "public": false
+  },
+  "BodyPart": {
+    "dataSource": null,
+    "public": false
   }
 }

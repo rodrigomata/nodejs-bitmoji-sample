@@ -1,0 +1,29 @@
+{
+  "name": "BodyPart",
+  "base": "Model",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": false
+  },
+  "properties": {
+    "color": {
+      "type": "string",
+      "default": "",
+      "description": "Color that will be applied to the SVG"
+    },
+    "filename": {
+      "type": "string",
+      "default": "",
+      "description": "Name of the SVG that will be used"
+    },
+    "customizable": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {},
+  "excludeBaseProperties": ["id"]
+}
