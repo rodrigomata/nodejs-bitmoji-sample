@@ -1,0 +1,52 @@
+{
+  "name": "avatar",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "eyes": {
+      "type": "string",
+      "default": "blue"
+    },
+    "hairColor": {
+      "type": "string",
+      "default": "brown"
+    },
+    "hairType": {
+      "type": "string",
+      "default": "curly"
+    },
+    "hairAccesory": {
+      "type": "string",
+      "default": "white hat"
+    },
+    "complexion": {
+      "type": "string",
+      "default": "fat"
+    },
+    "skin": {
+      "type": "string",
+      "default": "light"
+    },
+    "gender": {
+      "type": "string",
+      "default": "male"
+    },
+    "bodyAccesory": {
+      "type": "string"
+    },
+    "legAccesory": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
