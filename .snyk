@@ -72,3 +72,8 @@ patch:
         patched: '2019-07-09T15:40:00.481Z'
     - loopback > loopback-connector-remote > loopback-datasource-juggler > loopback-connector > async > lodash:
         patched: '2019-07-09T15:40:00.481Z'
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - snyk > proxy-agent > https-proxy-agent:
+        patched: '2019-10-04T08:18:32.453Z'
+    - snyk > proxy-agent > pac-proxy-agent > https-proxy-agent:
+        patched: '2019-10-04T08:18:32.453Z'
