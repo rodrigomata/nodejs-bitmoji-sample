@@ -21,7 +21,7 @@
     "strong-error-handler": "^3.5.0",
     "loopback-component-explorer": "^6.5.1",
     "loopback": "^3.22.0",
-    "snyk": "^1.745.0"
+    "snyk": "^1.950.0"
   },
   "devDependencies": {
     "eslint": "^4.18.2",
